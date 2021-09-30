@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: "Run metar gather daily"
+name: Run metar gather daily
 
 # Controls when the workflow will run
 on:
@@ -25,5 +25,4 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Runscript
-        run: |
-        sh ./gather_metar.R
+        run: gather_metar.R

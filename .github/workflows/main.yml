@@ -45,8 +45,14 @@ jobs:
       
       - name: Query packages
         run: |
-          install.packages("tidyverse")
+          install.packages("dplyr")
+          install.packages("tidyr")
+          install.packages("rvest")
+          install.packages("lubridate")
           install.packages("vroom")
+          install.packages("purrr")
+          install.packages("stringr")
+          install.packages("readr"")
         shell: Rscript {0}
 
       # Runs a single command using the runners shell

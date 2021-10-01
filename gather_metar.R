@@ -1,7 +1,11 @@
-library(tidyverse)
+library(dplyr)
+library(tidyr)
 library(rvest)
 library(lubridate)
 library(vroom)
+library(purrr)
+library(stringr)
+library(readr)
 
 current <- vroom(
   "data/metar_data.csv",
@@ -81,9 +85,9 @@ new_data <- anti_join(metar_tib,current)%>%
   )%>%
   select(entryid, everything())
 
-
-write_csv(
-  x = new_data,
-  file = "data/metar_data.csv",
-  append = T
-)
+# 
+# write_csv(
+#   x = new_data,
+#   file = "data/metar_data.csv",
+#   append = T
+# )

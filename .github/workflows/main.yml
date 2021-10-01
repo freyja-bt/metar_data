@@ -52,7 +52,7 @@ jobs:
           install.packages("vroom")
           install.packages("purrr")
           install.packages("stringr")
-          install.packages("readr"")
+          install.packages("readr")
         shell: Rscript {0}
 
       # Runs a single command using the runners shell

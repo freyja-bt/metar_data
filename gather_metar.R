@@ -1,5 +1,6 @@
 library(dplyr)
 library(tidyr)
+library(xml2)
 library(rvest)
 library(lubridate)
 library(vroom)

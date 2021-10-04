@@ -47,6 +47,7 @@ jobs:
         run: |
           install.packages("dplyr")
           install.packages("tidyr")
+          install.packages("xml2")
           install.packages("rvest")
           install.packages("lubridate")
           install.packages("vroom")

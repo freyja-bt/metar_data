@@ -1,7 +1,7 @@
-list.of.packages <- c("rvest", "dplyr", "tidyr","xml2","lubridate","vroom","purrr","stringr","readr")
-new.packages <- list.of.packages[!(list.of.packages %in%
-                                     installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
+#list.of.packages <- c("rvest", "dplyr", "tidyr","xml2","lubridate","vroom","purrr","stringr","readr")
+#new.packages <- list.of.packages[!(list.of.packages %in%
+#                                     installed.packages()[,"Package"])]
+#if(length(new.packages)) install.packages(new.packages)
 
 library(dplyr)
 library(tidyr)
